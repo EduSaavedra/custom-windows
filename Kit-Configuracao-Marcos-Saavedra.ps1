@@ -72,5 +72,6 @@ Stop-Process -Name explorer -Force
 Start-Process explorer
 #################################################################################################################################
 
-# ÚLTIMA ATUALIZAÇÃO: 12/06/2024
+# ÚLTIMA ATUALIZAÇÃO: 24/06/2024
 # Adicionados itens "Não combinar itens na barra de tarefas", "Ocultar botão e barra de pesquisa", "Ao usar várias telas, mostrar meus aplicativos da barra de tarefas em..." e "Reinicia o Serviço Windows Explorer"
+# Adicionado o modo entusiata (Mais Detalhes) na tela de progresso de cópia de arquivos
