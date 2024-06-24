@@ -56,12 +56,15 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer
 ################ Ocultar botão e barra de pesquisa
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name "SearchboxTaskbarMode" -Value 0 #Ocultar a Barra de Pesquisa
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "ShowSearchBox" -Value 0 #Ocultar o Botão de Pesquisa
-
 #################################################################################################################################
 
 ################ Ao usar várias telas, mostrar meus aplicativos da barra de tarefas em...
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "MMTaskbarMode" -Value 2
 #Valores possíveis: 0 - Todas as barras de tarefas, 1 - Barra de tarefas principal e barra de tarefas onde a janela está aberta, 2 - Barra de tarefas onde a janela está aberta
+#################################################################################################################################
+
+################ Habilitar a opção "Mais Detalhes" (modo entusiasta) na tela de progresso de cópia de arquivos
+Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\OperationStatusManager" -Name "EnthusiastMode" -Value 1
 #################################################################################################################################
 
 ################ Reinicia o Serviço Windows Explorer
